@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid red; */
+}
+
+.container{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    border: 5px solid green;
+}
+
+button{
+    display: inline-block;
+    border: 1px solid green;
+}
