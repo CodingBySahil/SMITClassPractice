@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>7 december 2023 | BRT pricing</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title"><span>BRT</span> Peshawar ticket pricing system</h1>
+        <p class="top-para">The Government of Khyber Pakhtunkhwa has announced that Peshawar BRT’s ticket prices will range between a minimum of PKR 10 and a maximum of PKR 50 depending on the distance travelled by each passenger. Check out the fare table below for details:
+        </p>
+        <label for="distance-traveled">Enter the distance traveled by the passenger</label>
+        <input type="text" id="distance-traveled" placeholder="Type the distance in kilometer">
+        <button id="price-button" onclick="BrtTicketPrice()">Click to see price</button>
+        <h3 class="result">You will see the price here</h3>
+        <img src="images/Peshawar-BRT-image.jpg" alt="image of BRT card" id="card-image">
+    </div>
+    <!-- Custom javascript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

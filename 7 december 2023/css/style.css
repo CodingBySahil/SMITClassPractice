@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.main-title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3.5em;
+    background-color: #fce073;
+    color: #0fa44a;
+}
+
+.main-title span{
+    color: #f11d2a;
+}
+
+.top-para{
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+#distance-traveled{
+    width: 50%;
+    margin: 3em;
+    padding: 8px 16px;
+    border-radius: 11px;
+}
+
+#price-button{
+    padding: 8px 16px;
+    border-radius: 11px;
+}
+
+.result{
+    color: green;
+}
+
+#card-image{
+    width: 100%
+}
