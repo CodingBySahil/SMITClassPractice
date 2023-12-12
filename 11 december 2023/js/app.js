@@ -27,19 +27,20 @@ let matrixTwo = [
   [77, 88, 99],
 ];
 
-let valueOne = matrixOne[1][1] + matrixTwo[1][1];
-console.log(`It should print 60 : ${valueOne}`);
-let valueTwo = matrixOne[0][1] + matrixTwo[0][1];
-console.log(`It should print 24 : ${valueTwo}`);
-let valueThree = matrixOne[2][1] + matrixTwo[2][1];
-console.log(`It should print 96 : ${valueThree}`);
-let valueFour = matrixOne[1][2] + matrixTwo[1][2];
-console.log(`It should print 72 : ${valueFour}`);
-let valueFive = matrixOne[1][0] + matrixTwo[1][0];
-console.log(`It should print 48 : ${valueFive}`);
-let valueSix = matrixOne[2][0] + matrixTwo[2][0];
-console.log(`It should print 84 : ${valueSix}`);
-console.log(`The Complete first matrix is ${matrixOne}`)
-console.log(`The Complete second matrix is ${matrixTwo}`)
+// let valueOne = matrixOne[1][1] + matrixTwo[1][1];
+// console.log(`It should print 60 : ${valueOne}`);
+// let valueTwo = matrixOne[0][1] + matrixTwo[0][1];
+// console.log(`It should print 24 : ${valueTwo}`);
+// let valueThree = matrixOne[2][1] + matrixTwo[2][1];
+// console.log(`It should print 96 : ${valueThree}`);
+// let valueFour = matrixOne[1][2] + matrixTwo[1][2];
+// console.log(`It should print 72 : ${valueFour}`);
+// let valueFive = matrixOne[1][0] + matrixTwo[1][0];
+// console.log(`It should print 48 : ${valueFive}`);
+// let valueSix = matrixOne[2][0] + matrixTwo[2][0];
+// console.log(`It should print 84 : ${valueSix}`);
+// console.log(`The Complete first matrix is ${matrixOne}`)
+// console.log(`The Complete second matrix is ${matrixTwo}`)
 console.log(`${matrixOne}`)
+console.log(matrixOne)
 console.log("The complete matrix is : " + matrixOne)
