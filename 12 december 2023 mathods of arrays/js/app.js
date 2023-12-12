@@ -24,9 +24,13 @@
 //     console.log(i)
 // }
 
-let fruits = ["Mango", "apple", "banana", "orange"];
-for (i = 0; i <= 3; i++) {
-  if (i === 0 || i === 2) {
-    console.log(fruits[i]);
-  }
+// let fruits = ["Mango", "apple", "banana", "orange"];
+// for (i = 0; i <= 3; i++) {
+//   if (i === 0 || i === 2) {
+//     console.log(fruits[i]);
+//   }
+// }
+let i=0;
+for (i=0; i<=3; i++){
+  console.log(i);
 }
