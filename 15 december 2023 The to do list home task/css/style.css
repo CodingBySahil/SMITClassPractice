@@ -4,7 +4,10 @@
     box-sizing: border-box;
     /* border: 1px solid red; */
 }
-
+body{
+    background: rgb(0,36,28);
+background: linear-gradient(90deg, rgba(0,36,28,0.9445028011204482) 0%, rgba(8,108,105,1) 25%, rgba(9,107,121,1) 35%, rgba(118,80,9,1) 57%, rgba(0,212,255,1) 100%);
+}
 .container{
     width: 85%;
     margin: 0 auto;
@@ -16,9 +19,9 @@
     padding: 1em;
 }
 .to-do-list{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.464);
     padding: 1em 0;
-    transition: 0.5s;
+    transition: 2s;
 }
 .to-do-list h2{
     text-align: center;
