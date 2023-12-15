@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+.container h1{
+    font-size: 2em;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+}
+.to-do-list{
+    background-color: red;
+    padding: 1em 0;
+    transition: 0.5s;
+}
+.to-do-list h2{
+    text-align: center;
+    color: white;
+}
+.input-title{
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-title input{
+    width: 45%;
+    padding: 1em;
+}
+.add-to-start-btn,.remove-from-start-btn,.add-to-end-btn,.remove-from-end-btn {
+    padding: 1em;
+    font-weight: bold;
+}
+.add-to-start-btn:hover,.remove-from-start-btn:hover,.add-to-end-btn:hover,.remove-from-end-btn:hover {
+    transition: 0.5s;
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+}
+.output-of-list {
+    width: 45%;
+    margin: auto;
+    margin-left: 370px;
+}
+.output-of-list p{
+    padding: 0.4em 0;
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    margin-top: .5em;
+}
+.output-of-list p:hover{
+    background-color: rgba(113, 113, 113, 0.466);
+    color: white;
+    
+}
+.output-of-list p button{
+    background-color: gray;
+    color: white;
+    padding: 0 .4em;
+    margin: 0 .5em;
+    float: right;
+    cursor: pointer;
+}
+.output-of-list p button:hover{
+    background-color: red;
+}
