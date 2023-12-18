@@ -13,15 +13,13 @@
             <h2>My To Do List</h2>
             <div class="input-title">
                 <button type="submit" class="add-to-start-btn" onclick="addToStart()">ADD TO START</button>
-                <button class="remove-from-start-btn">REMOVE FROM START</button>
+                <button class="remove-from-start-btn" onclick="removeFromStart()">REMOVE FROM START</button>
                 <input type="text" placeholder="Write the task title here" class="taskTitle">
-                <button class="add-to-end-btn">ADD TO END</button>
-                <button class="remove-from-end-btn">REMOVE FROM END</button>
+                <button class="add-to-end-btn" onclick="addToEnd()">ADD TO END</button>
+                <button class="remove-from-end-btn" onclick="removeFromEnd()">REMOVE FROM END</button>
             </div>
             <div class="output-of-list">
-                <p>task 1 <button>X</button></p>
-                <p>task 2 <button>X</button></p>
-                <p>task 3 <button>X</button></p>
+                <h1 class="task"></h1>
             </div>
         </div>
     </div>

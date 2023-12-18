@@ -1,14 +1,9 @@
-let toDoList =["Wake up at morning","Fresh yourself","Go for morning walk"];
+let toDoList =[];
 
-// for(let lengthOfList = 0 ; lengthOfList <= toDoList.length; lengthOfList++){
-//     console.log(document.getElementsByTagName('p').innerHTML = toDoList[lengthOfList])
-// }
 function addToStart(){
-    toDoList.push(document.querySelector(".taskTitle").innerHTML)
-    for(let lengthOfList = 0 ; lengthOfList <= toDoList.length; lengthOfList++){
-        // console.log(document.getElementsByTagName('p').innerHTML = toDoList[lengthOfList])
-        // console.log(toDoList.pop())
-    }
+    let inputtext = document.querySelector("taskTitle").value
+    toDoList.push(inputtext);
+    document.querySelector(".task").textContent = toDoList;
 }
 function addToEnd(){
 
@@ -17,5 +12,6 @@ function removeFromStart(){
 
 }
 function removeFromEnd(){
-
+    toDoList.pop(inputtext);
+    document.querySelector(".task").textContent = toDoList;
 }
