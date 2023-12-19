@@ -2,7 +2,11 @@ let toDoList = [];
 let runTimeValue;
 function add() {
   runTimeValue = document.querySelector(".title").value;
-  toDoList.push(runTimeValue);
+  if (runTimeValue == ""){
+    alert("Enter a valid task !")
+  }else{
+    toDoList.push(runTimeValue);
+  }
   document.querySelector(".task").textContent = toDoList;
 }
 function del() {
