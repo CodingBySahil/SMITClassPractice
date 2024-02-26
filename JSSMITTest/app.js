@@ -1,22 +1,21 @@
 let body = document.querySelector("body");
 let time = document.querySelector("#time");
-let x_value = document.querySelector("#x-axis");
-let y_value = document.querySelector("#y-axis");
+let x = document.querySelector("#x-axis");
+let y = document.querySelector("#y-axis");
 
 body.addEventListener("click", (e) => {
   getCurrentDate();
-  x_value.innerText = "X-Axis:" + e.clientX;
-  y_value.innerText = "X-Axis:" + e.clientY;
+  x.innerText = "X-Axis:" + e.clientX;
+  y.innerText = "X-Axis:" + e.clientY;
 });
 
 function getCurrentDate() {
   let date = new Date();
 
   time.textContent = 
-    "Time:" +
     date.getHours() +
-    ":" +
+    "hours " +
     date.getMinutes() +
-    ":" +
-    date.getSeconds();
+    "minutes " +
+    date.getSeconds() + " seconds";
 }
