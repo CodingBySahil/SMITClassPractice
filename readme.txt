@@ -1,2 +1,0 @@
-https://codingbysahil.github.io/SMITClassPractice/
-This HTML and JavaScript code displays a webpage with a header and three dynamically updated lines showing the current time and the coordinates of a mouse click. The time is continuously updated using JavaScript's `Date` object, while the X and Y coordinates are displayed when the body is clicked. This code can be used as a simple example to demonstrate event handling and dynamic content updates in web development projects.
