@@ -5,13 +5,27 @@
 
 // console.log(heading.textContent)
 
-let anotherDiv = document.createElement("div");
-anotherDiv.innerHTML = "<h5>I am h5 heading by js inside another DIV</h5>"
-let h1 = document.createElement("h1");
-h1.innerHTML = "I am heading number 1";
-let p = document.createElement("p");
-p.innerHTML = "I am paragrapgh";
-let HTMLDiv = document.querySelector('.box');
-HTMLDiv.append(h1)
-HTMLDiv.before(anotherDiv)
-HTMLDiv.after(p)
+// let anotherDiv = document.createElement("div");
+// anotherDiv.innerHTML = "<h5>I am h5 heading by js inside another DIV</h5>"
+// let h1 = document.createElement("h1");
+// h1.innerHTML = "I am heading number 1";
+// let p = document.createElement("p");
+// p.innerHTML = "I am paragrapgh";
+// let HTMLDiv = document.querySelector('.box');
+// HTMLDiv.append(h1)
+// HTMLDiv.before(anotherDiv)
+// HTMLDiv.after(p)
+// HTMLDiv.remove()
+// p.remove()
+// anotherDiv.remove()
+
+let orignalDiv = document.querySelector(".box");
+let p;
+function add() {
+  p = document.createElement("p");
+  p.innerHTML = "This is p";
+  orignalDiv.append(p);
+}
+function remove() {
+  p.remove();
+}
