@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        let apiKey = '5a32de4e7b4ad7cae32f2b186fa3111b'
+        // Make a request for a user with a given ID
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=peshawar&appid=${apiKey}&units=metric`)
+          .then(function (response) {
+            // handle success
+            console.log(response);
+            document.write(`Current temprature of peshawar is ${response.data.main.temp}`)
+            document.write(` and the wind speed in peshawar is  ${response.data.sys.sunrise}`)
+          })
+          .catch(function (error) {
+            // handle error
+            console.log(error);
+          })
+    </script>
+</body>
+</html>
