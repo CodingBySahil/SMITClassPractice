@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  background-color: rgb(64, 154, 245);
+}
+#weather-container {
+  width: 60%;
+  height: 90vh;
+  border-radius: 10px;
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto auto;
+}
+#input-city {
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px;
+}
+#input-city-name {
+  padding: 8px;
+  border-radius: 5px;
+  width: 60%;
+}
+#search {
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+#weather-details {
+  width: 90%;
+  margin: 0 auto;
+}
+.text {
+  font-size: 1.3em;
+  color: white;
+}
