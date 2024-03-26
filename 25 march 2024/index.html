@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>Facebook Post</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Facebook Post</title>
 </head>
-<body>
 
-    <div class="new_post" >
-        <img class="avatar" src="images/post_img_2.jpg" alt="Avatar">
-        <div class="post-author">Muhammad sahil <br></div>
+<body>
+  <!-- <div class="post">
+      <div class="new_post">
+        <img class="avatar" src="images/post_img_2.jpg" alt="Avatar" />
+        <div class="post-author">Muhammad sahil <br /></div>
         <div id="new_post">
-            <button id="postBtn">What's on your mind</button>
+          <button id="postBtn">What's on your mind</button>
         </div>
+      </div>
+    </div> -->
+
+
+
+
+
+  <!-- main container -->
+  <div class="container">
+    <!-- post container -->
+    <div class="post_container">
+      <!-- user profile -->
+      <div class="user_profile">
+        <img class="profile_img" src="images/post_img_1.jpg" alt="profileImage">
+        <div>
+          <h5 class="profile_name">Muhammad Sahil</h5>
+          <p class="post_time">sunday 1hr</p>
+        </div>
+      </div>
+
+      <!-- post description -->
+      <div class="post_contents">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, optio? Dolores praesentium ex aliquid officia
+          sint, sapiente tempore corporis deserunt accusamus cum quo sequi amet voluptatum pariatur nam tenetur
+          voluptates aspernatur minus architecto beatae nisi debitis est totam perspiciatis? Quasi iusto ex non,
+          consequatur soluta expedita hic sapiente cum unde?
+        </p>
+        <img src="images/post_img_2.jpg" alt="postImage" class="post_image">
+        <div class="actions">
+          <div class="like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Like</div>
+          <div class="comment"> <i class="fa-solid fa-comment"></i> comment</div>
+          <div class="share"><i class="fa-solid fa-share"></i> share</div>
+        </div>
+      </div>
+
     </div>
-<div class="post">
-<script src="facebook.js"></script>
+  </div>
+
+
+
+
+  <script src="facebook.js"></script>
 </body>
+
 </html>

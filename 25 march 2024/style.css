@@ -1,9 +1,10 @@
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   margin: 0;
   padding: 20px;
 }
+
 
 .post {
   background-color: #fff;
@@ -84,4 +85,72 @@ body {
     cursor: pointer;
     color: white;
     background-color: #1877f2;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  border: 1px solid red;
+}
+
+body{
+  background-color: #5270ae;
+  height: 100vh;
+}
+.container{
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.user_profile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; 
+  padding: .2em;
+  width: 15em;
+}
+.profile_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: .4em;
+  margin-top: .4em;
+}
+.profile_name{
+  font-size: large;
+  text-align: center;
+  /* text-justify: center; */
+}
+.post_time{
+  color: #9a9999;
+  margin-top: 5px;
+}
+.post_contents{
+  padding: 1px;
+}
+.post_image{
+  width: 54.6em;
+  height: 25em;
+  margin: 6px 0;
+}
+.actions{
+  display: flex;
+  justify-content: space-around;
 }
