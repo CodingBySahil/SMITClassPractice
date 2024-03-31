@@ -1,5 +1,5 @@
 let mainContainer = document.querySelector(".container");
-let takeDescription;
+let takeDescription = 'posted';
 // Get references to the input file element and the image element
 const imageInput = document.getElementById("post_image");
 const selectedImage = document.getElementsByClassName("post_image");
@@ -47,7 +47,7 @@ let post = (storeImgURLTemprary) => {
   let postTimeP = document.createElement("p"); // p tag for post time
   postTimeP.classList.add("post_time");
   let postTime = new Date(); // taking the current date
-  postTimeP.innerHTML = `Post on ${postTime.getDate()}/${postTime.getMonth()}/${postTime.getFullYear()}`; // setting the current date and time
+  postTimeP.innerHTML = `Date:${postTime.getDate()}/${postTime.getMonth()} Time:${postTime.getHours()}:${postTime.getMinutes()}`; // setting the current date and time
   profileNameAndTimeDiv.appendChild(profileNameH5); //append profile name
   profileNameAndTimeDiv.appendChild(postTimeP); // append post timing
   userProfile.appendChild(profileNameAndTimeDiv); // append name and time in user profile div
