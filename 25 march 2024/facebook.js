@@ -45,7 +45,7 @@ document.querySelector("#post_btn").addEventListener("click", () => {
 //   alert("post done");
 });
 
-function post() {
+function post(imageURL) {
 //   if (flag) {
     // new post container
     let newPostContainerDiv = document.createElement("div");
@@ -90,27 +90,10 @@ function post() {
     let postImg = document.createElement("img");
     postImg.setAttribute("class", "post_image");
 
-    // Listen for changes in the input file element
-    imageInput.addEventListener("change", function (event) {
-      // Check if files are selected
-      if (event.target.files && event.target.files[0]) {
-        // Get the selected file
-        console.log('con true')
-        const selectedFile = event.target.files[0];
+ 
 
-        // Create a URL for the selected image
-        const imageURL = URL.createObjectURL(selectedFile);
-
-        // Set the source of the image element to the URL
-        postImg.src = imageURL;
-        console.log(imageURL);
-      }else{
-        console.log('cond fale')
-      }
-    });
-
-    //   postImg.src = "images/post_img_1.jpg";
-    //   postImg.src = imageURL;
+      postImg.src = imageURL;
+      // postImg.src = imageURL;
     postImg.setAttribute("alt", "post image");
     postContentsDiv.appendChild(postImg); // append profile image in user profile div
     // post actions
@@ -139,7 +122,25 @@ function post() {
     document.querySelector("#new_post_form").style.display = "none";
 //   }
 }
+   // Listen for changes in the input file element
+   imageInput.addEventListener("change", function (event) {
+    // Check if files are selected
+    if (event.target.files && event.target.files[0]) {
+      // Get the selected file
+      // console.log('con true')
+      const selectedFile = event.target.files[0];
 
+      // Create a URL for the selected image
+      const imageURL = URL.createObjectURL(selectedFile);
+
+      // Set the source of the image element to the URL
+      post(imageURL)
+      // postImg.src = imageURL;
+      console.log(imageURL);
+    }else{
+      console.log('cond fale')
+    }
+  });
 // document.addEventListener('DOMContentLoaded', function(){
 
 // })
