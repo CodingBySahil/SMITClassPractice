@@ -28,7 +28,7 @@ body {
 #new_post_form {
   width: 80%;
   margin: 2em auto;
-  /* display: none; */
+  display: none;
   background-color: #9a999957;
   padding: 16px;
   border-radius: 5px;
