@@ -89,6 +89,10 @@ input[type="button"] {
 .post_contents {
   padding: 1px;
 }
+
+.post_contents p{
+  margin: 8px 0px;
+}
 .post_image {
   width: 54em;
   height: 25em;
