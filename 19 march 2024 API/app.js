@@ -13,6 +13,7 @@ let country = document.querySelector("#country-name");
 
 searchBtn.addEventListener("click", function () {
   cityName = document.querySelector("#input-city-name").value;
+  document.querySelector("#input-city-name").value = ""
   // Make a request for a user with a given ID
   axios
     .get(
@@ -25,10 +26,11 @@ searchBtn.addEventListener("click", function () {
       minTemprature.innerHTML = `Manimum temprature of ${cityName} is ${response.data.main.temp_max}`;
       pressure.innerHTML = `pressure in wind of ${cityName} is ${response.data.main.pressure}`;
       sunrise.innerHTML = `sunrise in ${cityName} is  ${response.data.sys.sunrise}`;
-      country.innerHTML = `${cityName} is the city of ${response.data.sys.country}`;
+      country.innerHTML = `${cityName} city of ${response.data.sys.country}`;
       speedOfWind.innerHTML = `Speed of wind in ${cityName} ${response.data.wind.speed}`;
       degOfWind.innerHTML = `Direction of wind in Degree ${response.data.wind.deg}`;
       humadity.innerHTML = `humadity in wind is   ${response.data.main.humidity}`;
+      
     })
     .catch(function (error) {
       // handle error

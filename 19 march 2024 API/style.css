@@ -4,19 +4,24 @@
   box-sizing: border-box;
 }
 body {
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  background-color: rgb(64, 154, 245);
+  background-color: rgba(64, 155, 245);
+  /* background-image: url('images/bg.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;*/
+  height: 100vh; 
 }
 #weather-container {
   width: 60%;
-  height: 90vh;
+  /* height: 90vh; */
   border-radius: 10px;
-  background-image: url("images/bg.jpg");
+  background-image: url("images/bg1.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center center;
+  background-size: cover;
   margin: auto auto;
+  padding: 3em;
 }
 #input-city {
   width: 90%;
@@ -39,4 +44,7 @@ body {
 .text {
   font-size: 1.3em;
   color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
+
